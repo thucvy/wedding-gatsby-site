@@ -1,6 +1,6 @@
 ---
 header: "Vy & Huân"
-subheader: "We are getting married!"
+subheader: ""
 imageFileName: "header-bg.jpg"
 jumpToAnchor: "Ceremony"
 jumpToAnchorText: "Details"
