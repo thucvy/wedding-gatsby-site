@@ -1,4 +1,4 @@
 ---
-brand: "Start Bootstrap"
+brand: "Vy & Huân"
 menuText: "Menu "
 ---

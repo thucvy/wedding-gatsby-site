@@ -54,8 +54,6 @@ export const query = graphql`
             imageFileNameDetail
             imageFileName
           }
-          privacyHref
-          privacyText
           services {
             content
             header
@@ -68,6 +66,7 @@ export const query = graphql`
             linkedin
             medium
             twitter
+            instagram
           }
           subheader
           teamMember {
@@ -79,12 +78,11 @@ export const query = graphql`
               linkedin
               medium
               twitter
+              instagram
             }
             subheader
           }
           telephone
-          termsHref
-          termsText
           title
           timeline {
             content
