@@ -37,6 +37,7 @@ export const query = graphql`
           clients {
             href
             imageFileName
+            videoEmbed
           }
           content
           copyright
