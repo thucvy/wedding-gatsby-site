@@ -29,13 +29,13 @@ timeline:
       content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.",
     },
     {
-      imageFileName: "about/4.jpg",
+      imageFileName: "about/5.jpg",
       header: "January 2020",
       subheader: "Our family grows",
       content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.",
     },
     {
-      imageFileName: "about/4.jpg",
+      imageFileName: "about/6.jpg",
       header: "March 2020",
       subheader: "Ended long-distance",
       content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.",
