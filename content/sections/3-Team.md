@@ -6,32 +6,27 @@ content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, l
 teamMember: [
   {
     imageFileName: "team/1.jpg",
-    header: "Kay Garland",
-    subheader: "Lead Designer",
+    header: "Thục Vy",
+    subheader: "Organization freak",
     social: {
-      twitter: "#",
-      facebook: "#",
-      linkedin: "#"
+      facebook: "veewuai",
+      instagram: "veewuai"
     }
   },
   {
     imageFileName: "team/2.jpg",
-    header: "Larry Parker",
-    subheader: "Lead Marketer",
+    header: "Huân Lý",
+    subheader: "Large son",
     social: {
-      twitter: "#",
-      facebook: "#",
-      medium: "#"
+      facebook: "Ritchlinlin",
+      instagram: "ritchlinlin"
     }
   },
   {
     imageFileName: "team/3.jpg",
-    header: "Diana Pertersen",
-    subheader: "Lead Developer",
+    header: "Soju Ly",
+    subheader: "Little son",
     social: {
-      twitter: "#",
-      facebook: "#",
-      medium: "#"
     }
   },
 ]
