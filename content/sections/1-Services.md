@@ -1,5 +1,5 @@
 ---
-anchor: "Lời nhắn"
+anchor: "Message"
 header: "Dear"
 subheader: "Lorem ipsum dolor sit amet consectetur."
 services: [
