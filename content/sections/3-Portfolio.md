@@ -1,7 +1,7 @@
 ---
-# anchor: "Ceremony"
+anchor: "Ceremony"
 header: "Ceremony"
-subheader: "Lorem ipsum dolor sit amet consectetur."
+subheader: "March 04, 2023 at 18:00 (Vietnam Time)"
 portfolios: [
   {
     imageFileName: "portfolio/01-thumbnail.jpg",

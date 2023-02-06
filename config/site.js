@@ -1,21 +1,8 @@
 module.exports = {
-  title: "Gatsyby Startbootstrap Agency",
-  keywords: [
-    "gatsby",
-    "gatsbyjs",
-    "landing page",
-    "landing",
-    "i18n",
-    "eslint",
-    "bootstrap",
-    "startbootstrap-agency",
-  ],
-  description: "gatsby version of startbootstrap-agency with i18n support.",
-  author: "thundermiracle",
+  title: "Vy & Huân",
+  keywords: ["Vy", "Huan"],
+  description: "Wedding website of Vy and Huân",
+  author: "Vy Nguyen",
   trackingId: "UA-119418003-5",
   defaultLang: "en",
-  // langTextMap: {
-  //   en: "English",
-  //   vn: "Tiếng Việt",
-  // },
 };
