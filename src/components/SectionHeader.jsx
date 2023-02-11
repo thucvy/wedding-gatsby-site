@@ -7,12 +7,12 @@ import "./SectionHeader.scss";
 
 const SectionHeader = ({ header, subheader, className, ...restProps }) => {
   const subheaderPart = subheader ? (
-    <h3 className="section-subheading text-muted">{subheader}</h3>
+    <h2 className="section-heading">{subheader}</h2>
   ) : null;
 
   return (
     <Col lg={12} className={clsx("section-header", "text-center", className)} {...restProps}>
-      <h2 className="section-heading">{header}</h2>
+      {/* <h2 className="section-heading">{header}</h2> */}
       {subheaderPart}
     </Col>
   );

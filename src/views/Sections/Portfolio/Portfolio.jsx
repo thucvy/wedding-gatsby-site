@@ -43,7 +43,8 @@ const Portfolio = ({ className, frontmatter }) => {
     return (
       <span>
         <div className="countdownAndTanuki">
-          <div className="countdownIntro">GEM Center - Sảnh Pollux (Lầu 3)</div> {/* countdownIntro */}
+          <div className="countdownIntro">March 04, 2023 at 18:00 (Vietnam Time)</div>{" "}
+          {/* countdownIntro */}
           <div className="countdownWrapper">
             <div className="countdownSection">
               <div className="countWrapper">

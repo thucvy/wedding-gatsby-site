@@ -21,9 +21,13 @@ const Services = ({ className, frontmatter }) => {
       <Row>
         <div className="message">
           <p className="paragraph1">
-            Write sth here
+            Thank you for taking out some of your precious time and be here to celebrate the story
+            of Vy & Huan together with us. Whether you’re able to attend our wedding ceremony or
+            not, we hope that this snippet of our journey from two different people with two
+            different lives to making the ultimate commitment to one another will inspire you to
+            believe in love and how it continue to help us overcome everything so that we can be
+            together, as one family.
           </p>
-          <p className="paragraph5">Vy & Huân</p> 
         </div>{" "}
         {/* message */}
       </Row>

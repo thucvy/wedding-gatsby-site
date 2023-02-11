@@ -41,11 +41,6 @@ export const query = graphql`
           }
           content
           copyright
-          header
-          email
-          imageFileName
-          jumpToAnchor
-          jumpToAnchorText
           menuText
           portfolios {
             content

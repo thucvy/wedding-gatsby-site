@@ -1,52 +1,68 @@
 import React from "react";
 import PropTypes from "prop-types";
-import clsx from "clsx";
+import useSmoothScrollTo from "hooks/useSmoothScrollTo";
 
-import { Container, Card } from "react-bootstrap";
-import Image from "components/Image";
-import "./ImageCard.scss";
+import { Button, Carousel } from "react-bootstrap";
+import carouselImage1 from "content/assets/images/carousel/1.jpg";
+import carouselImage2 from "content/assets/images/carousel/2.jpg";
+import carouselImage3 from "content/assets/images/carousel/3.jpg";
 
-const ImageCard = ({ className, imageFileName, imageAlt, header, subheader, extraInfo }) => {
+const ImageCard = () => {
   return (
-    <Card className={clsx("image-card bg-dark text-white text-center", className)}>
-      <Image className="image" fileName={imageFileName} alt={imageAlt || header || subheader} />
-      <Card.ImgOverlay className="no-padding">
-        <Container>
-          <div className="intro-text">
-            <div className="intro-text-no-button">
-              <div className="intro-heading">{header}</div>
-              <div className="intro-lead-in text-uppercase">{subheader}</div>
-              <div className="text-uppercase">
-                <div className="date">Mar. 04, 2023</div> {/* date */}
-              </div>
-            </div>{" "}
-            {/* intro-text-no-button */}
-            <br />
-            {extraInfo}
-          </div>{" "}
-          {/* intro-text */}
-        </Container>
-      </Card.ImgOverlay>
-    </Card>
+    <Carousel>
+      <Carousel.Item>
+        <img className="d-block w-100" src={carouselImage1} alt="First slide" />
+        <Carousel.Caption>
+          <h3>
+            <Button
+              size="xl"
+              variant="primary"
+              className="text-uppercase"
+              onClick={useSmoothScrollTo("Story")}
+            >
+              Our story
+            </Button>
+          </h3>
+          <p>Want to know how we end up here? ❣️</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img className="d-block w-100" src={carouselImage2} alt="Second slide" />
+
+        <Carousel.Caption>
+          <h3>
+            <Button
+              size="xl"
+              variant="primary"
+              className="text-uppercase"
+              onClick={useSmoothScrollTo("Ceremony")}
+            >
+              Let&apos;s celebrate
+            </Button>
+          </h3>
+          <p>Click to see more details of our ceremony 🎉</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img className="d-block w-100" src={carouselImage3} alt="Third slide" />
+
+        <Carousel.Caption>
+          <h3>
+            <Button
+              size="xl"
+              variant="primary"
+              className="text-uppercase"
+              onClick={useSmoothScrollTo("Guest Book")}
+            >
+              Send Message
+            </Button>
+          </h3>
+          <p>Feel free to give us some extra love 💌</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+    </Carousel>
   );
 };
 
-ImageCard.propTypes = {
-  className: PropTypes.string,
-  imageFileName: PropTypes.string,
-  imageAlt: PropTypes.string,
-  header: PropTypes.string,
-  subheader: PropTypes.string,
-  extraInfo: PropTypes.any,
-};
-
-ImageCard.defaultProps = {
-  className: null,
-  imageFileName: null,
-  imageAlt: null,
-  header: "",
-  subheader: "",
-  extraInfo: null,
-};
 
 export default ImageCard;

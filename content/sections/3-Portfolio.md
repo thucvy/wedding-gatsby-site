@@ -1,7 +1,7 @@
 ---
 anchor: "Ceremony"
 header: "Ceremony"
-subheader: "March 04, 2023 at 18:00 (Vietnam Time)"
+subheader: "GEM Center - Sảnh Pollux (Lầu 3)"
 portfolios: [
   {
     imageFileName: "portfolio/01-thumbnail.jpg",

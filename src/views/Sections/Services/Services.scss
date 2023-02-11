@@ -1,7 +1,11 @@
 .message {
-    margin: 40px;
+  margin: 40px;
 }
 
+.paragraph5 {
+  font-size: 16px;
+  font-weight: 400;
+  @include script-font;
+}
 @media (min-width: 768px) {
-
 }

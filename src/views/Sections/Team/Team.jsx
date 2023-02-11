@@ -36,7 +36,7 @@ const Team = ({ className, frontmatter }) => {
         <Row className="charities">
           <Col lg={8} className="mx-auto text-center">
             <p className="large text-muted">
-              Write sth here
+              We Thank You
             </p>
           </Col>
         </Row>

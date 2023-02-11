@@ -1,7 +1,7 @@
 ---
-header: "Vy & Huân"
+header: ""
 subheader: ""
 imageFileName: "header-bg.jpg"
 jumpToAnchor: "Ceremony"
-jumpToAnchorText: "Details"
+jumpToAnchorText: "Ceremony Details"
 ---
