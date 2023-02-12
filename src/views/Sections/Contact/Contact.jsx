@@ -27,41 +27,42 @@ const Contact = ({ className, frontmatter }) => {
     if (name.length === 0 || message.length === 0) {
       setAlert(true);
       // return false;
-    }
-    const formData = new FormData();
+    } else {
+      const formData = new FormData();
 
-    formData.append("id", id);
-    formData.append("name", name);
-    formData.append("message", message);
-    // formData.append("file", file);
+      formData.append("id", id);
+      formData.append("name", name);
+      formData.append("message", message);
+      // formData.append("file", file);
 
-    // const newItem = {
-    //   "id": id,
-    //   "name": name,
-    //   "message": message,
-    //   // "file": file,
-    // };
-    // setGuestBook([...guestBook, newItem]);
-    const url =
-      "https://script.google.com/macros/s/AKfycbwIkjjdIA6l6fjqgt4kpU7UOzOf5deAPjSL9bjS2u9fXMS79DvCiceA971D1LvLFFvFFQ/exec";
+      // const newItem = {
+      //   "id": id,
+      //   "name": name,
+      //   "message": message,
+      //   // "file": file,
+      // };
+      // setGuestBook([...guestBook, newItem]);
+      const url =
+        "https://script.google.com/macros/s/AKfycbwIkjjdIA6l6fjqgt4kpU7UOzOf5deAPjSL9bjS2u9fXMS79DvCiceA971D1LvLFFvFFQ/exec";
 
-    fetch(url, {
-      method: "POST",
-      body: formData
-    })
-      .then((res) => console.log("res", res))
-      .then((data) => {
-        console.log("data", data);
-        setSent(true)
-
+      fetch(url, {
+        method: "POST",
+        body: formData
       })
-      .catch((error) => {
-        console.log(error);
-        setErrorMsg(error);
-      });
-    setId(id + 1);
-    setName("");
-    setMessage("");
+        .then((res) => console.log("res", res))
+        .then((data) => {
+          console.log("data", data);
+          setSent(true)
+
+        })
+        .catch((error) => {
+          console.log(error);
+          setErrorMsg(error);
+        });
+      setId(id + 1);
+      setName("");
+      setMessage("");
+    }
   };
 
   if (!frontmatter) {
