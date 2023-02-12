@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import PropTypes from "prop-types";
 
 import { Row, Col, Form, Button, Accordion, Alert } from "react-bootstrap";
@@ -11,50 +11,57 @@ const Contact = ({ className, frontmatter }) => {
   const [id, setId] = useState(0);
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
-  const [file, setFile] = useState(null);
-  const [guestBook, setGuestBook] = useState([]);
+  // const [file, setFile] = useState(null);
+  // const [guestBook, setGuestBook] = useState([]);
   const [alert, setAlert] = useState(false);
+  const [sent, setSent] = useState(false)
+  const [errorMsg, setErrorMsg] = useState(null)
 
   useEffect(() => {
     if (name.length > 0 && message.length > 0) setAlert(false);
+    setErrorMsg(null);
+    setSent(false)
   }, [name, message]);
 
-  const updateGuestBook = async () => {
+  const updateGuestBook = () => {
     if (name.length === 0 || message.length === 0) {
       setAlert(true);
-    } else {
-      const newItem = {
-        "id": id,
-        "name": name,
-        "message": message,
-        "file": file,
-      };
-      setGuestBook([...guestBook, newItem]);
-      const res = await axios.post("/messages", guestBook);
-      console.log(res);
-      console.log(res.data);
-
-      //   const sendMessage = {
-      //     method: 'POST',
-      //     headers: {
-      //         "Accept": 'application/json',
-      //         'Content-Type': 'application/json',
-      //     },
-      //     body: {guestBook}
-      // };
-      // try {
-      //     const fetchResponse = await fetch(`http://${location}:8000/messages`);
-      //     const data = await fetchResponse.json();
-      //     return data;
-      // } catch (e) {
-      //     return e;
-      // }
+      // return false;
     }
+    const formData = new FormData();
 
+    formData.append("id", id);
+    formData.append("name", name);
+    formData.append("message", message);
+    // formData.append("file", file);
+
+    // const newItem = {
+    //   "id": id,
+    //   "name": name,
+    //   "message": message,
+    //   // "file": file,
+    // };
+    // setGuestBook([...guestBook, newItem]);
+    const url =
+      "https://script.google.com/macros/s/AKfycbwIkjjdIA6l6fjqgt4kpU7UOzOf5deAPjSL9bjS2u9fXMS79DvCiceA971D1LvLFFvFFQ/exec";
+
+    fetch(url, {
+      method: "POST",
+      body: formData
+    })
+      .then((res) => console.log("res", res))
+      .then((data) => {
+        console.log("data", data);
+        setSent(true)
+
+      })
+      .catch((error) => {
+        console.log(error);
+        setErrorMsg(error);
+      });
     setId(id + 1);
     setName("");
     setMessage("");
-    setFile(null);
   };
 
   if (!frontmatter) {
@@ -72,7 +79,7 @@ const Contact = ({ className, frontmatter }) => {
         <Row className="charities">
           <Col lg={8} className="mx-auto text-center">
             {alert && <Alert variant="danger">Xin điền đầy đủ thông tin trước khi gửi đi ạ</Alert>}
-            <Form>
+            <Form className="mb-3">
               <Form.Group className="mb-3" controlId="ControlInput1">
                 <Form.Label>Họ Tên/ Danh xưng</Form.Label>
                 <Form.Control
@@ -86,13 +93,13 @@ const Contact = ({ className, frontmatter }) => {
                 <Form.Label>Lời nhắn đến Huân và Vy 💌</Form.Label>
                 <Form.Control
                   as="textarea"
-                  rows={4}
+                  rows={10}
                   placeholder="Chúc mừng 2 bé iu"
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
                 />
               </Form.Group>
-              <Form.Group className="mb-3" controlId="ControlFile">
+              {/* <Form.Group className="mb-3" controlId="ControlFile">
                 <Form.Label>Đính kèm Hình/ Video (nếu có)</Form.Label>
                 <Form.Control
                   type="file"
@@ -100,14 +107,16 @@ const Contact = ({ className, frontmatter }) => {
                     setFile(e.target.files[0]);
                   }}
                 />
-              </Form.Group>
+              </Form.Group> */}
               <Button variant="primary" onClick={updateGuestBook}>
                 Gửi đi
               </Button>
             </Form>
+            {sent && <Alert variant="success">Lời nhắn đã được gửi đi thành công. Xin cảm ơn!</Alert>}
+            {errorMsg && <Alert variant="danger">{errorMsg}</Alert>}
           </Col>
         </Row>
-        {guestBook.length > 0 && (
+        {/* {guestBook.length > 0 && (
           <Row className="charities mt-5">
             <Accordion>
               {guestBook.map((m, idx) => (
@@ -118,7 +127,7 @@ const Contact = ({ className, frontmatter }) => {
               ))}
             </Accordion>
           </Row>
-        )}
+        )} */}
       </PageSection>
     </div>
   );
