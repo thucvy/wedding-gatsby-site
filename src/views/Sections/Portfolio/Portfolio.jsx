@@ -107,29 +107,7 @@ const Portfolio = ({ className, frontmatter }) => {
           {/* <Row> */}
           <Countdown date="2023-03-04T06:00:00-05:00" renderer={renderer} />
           {/* </Row> */}
-          {/* <Row> */}
-          <a
-            href="https://www.youtube.com/watch?v=EXOL-3JyXMI&feature=emb_err_woyt"
-            target="_blank"
-            rel="noreferrer"
-            className="youtubeLink"
-          >
-            <div className="container">
-              {/* <img src={Youtube} alt="youtubeLink" className="image" width="560" height="auto" />
-                <div className="middle">
-                  <img
-                    src={YoutubeHover}
-                    alt="youtubeLink"
-                    className="imageHover"
-                    width="560"
-                    height="auto"
-                  />
-                </div>{" "} */}
-              {/* middle */}
-            </div>{" "}
-            {/* container */}
-          </a>
-          {/* </Row> */}
+          
         </div>{" "}
         {/* countdownAndVideoDiv */}
       </PageSection>
