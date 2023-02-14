@@ -1,3 +1,9 @@
+.address {
+  font-size: 17px;
+  text-align: center;
+  @include body-font;
+}
+
 // Styling for the portfolio section
 .portfolio-section {
   * {
@@ -180,10 +186,10 @@
 // -DESKTOP VIEW
 @media (min-width: 769px) {
   .middle {
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
   }
   .image {
     width: 560;

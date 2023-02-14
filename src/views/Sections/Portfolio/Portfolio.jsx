@@ -35,14 +35,18 @@ const Portfolio = ({ className, frontmatter }) => {
       return (
         <span className="finishedCountdown">
           <p>The ceremony already started</p>
-          <p>Stay tuned for the wedding video coming soon</p>
+          <p>Stay tuned for the wedding video coming soon...</p>
         </span>
       ); // finishedCountdown;
     }
     // Render a countdown
     return (
       <span>
-        <div className="countdownAndTanuki">
+        <p className="address text-muted">
+          {" "}
+          8 Nguyễn Bỉnh Khiêm, Phường ĐaKao, Quận 1, TP. Hồ Chí Minh
+        </p>
+        <div>
           <div className="countdownIntro">March 04, 2023 at 6:00pm (Vietnam Time)</div>{" "}
           {/* countdownIntro */}
           <div className="countdownWrapper">
