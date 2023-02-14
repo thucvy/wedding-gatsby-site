@@ -85,8 +85,8 @@ const Portfolio = ({ className, frontmatter }) => {
   };
 
   return (
-    <div className="outerWrapper" id={anchor}>
-      <PageSection className={clsx("portfolio-section", className)}>
+    // <div className="outerWrapper">
+      <PageSection className={clsx("portfolio-section", className)} id={anchor}>
         <Notifications options={{ zIndex: 200, top: "50px" }} />
         {/* <Row className="justify-content-center ceremony-header"> */}
         <SectionHeader header={header} subheader={subheader} />
@@ -133,7 +133,7 @@ const Portfolio = ({ className, frontmatter }) => {
         </div>{" "}
         {/* countdownAndVideoDiv */}
       </PageSection>
-    </div>
+    // </div>
   );
 };
 
