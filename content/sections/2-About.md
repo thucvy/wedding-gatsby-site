@@ -33,9 +33,9 @@ timeline:
       header: "January 2020",
       subheader: "A fluffy boy joined us for the ride",
       content:
-        "Vy and Huan always wanted to have a puppy in their life, but their distance prevented them from ever thinking of actually adopting one. Sensing that it was the right moment, Huan decided to one day ask Vy if she want him to adopt a puppy. That same evening, the adorable malshi pup, later came to be known as Soju joined their family. Vy immediately hopped on a bus ride to Toronto the following day to see her new “son”. The morning after, it was love at first sight for both of them. Adopted by Huan, but Soju had never been able to be away from Vy since that day.
-        To Soju, we love you more than you will ever know. If there is another life, we wish that you will be our son by birth and that we will get a chance to raise you and give you the best life that you deserve to have. You are our little ray of sunshine amidst the worldly chaos that ensue since 2020. Thank you for entering our life and giving us the privilege of raising you into your adorable self that we love so dearly.
-        ",
+        'Vy and Huan always wanted to have a puppy in their life, but their distance prevented them from doing so. Sensing that it was the right moment, Huan decided to one day ask Vy if she wanted him to adopt a puppy. That same evening, the adorable Mal-Shi pup, later came to be known as Soju joined their family. Vy immediately travelled to Toronto the following day to see her new “son”. Adopted by Huan, but Soju had never been able to be away from Vy since that day.
+        "To Soju, we love you more than you will ever know. If there is another life, we wish that you will be our son by birth and that we will get a chance to raise you and give you the best life that you deserve to have. You are our little ray of sunshine amidst the worldly chaos that ensue since 2020. Thank you for entering our life and giving us the privilege of raising you into your adorable self that we love so dearly."
+        ',
     },
     {
       imageFileName: "about/6.jpg",

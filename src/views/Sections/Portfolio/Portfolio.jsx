@@ -43,7 +43,7 @@ const Portfolio = ({ className, frontmatter }) => {
     return (
       <span>
         <div className="countdownAndTanuki">
-          <div className="countdownIntro">March 04, 2023 at 18:00 (Vietnam Time)</div>{" "}
+          <div className="countdownIntro">March 04, 2023 at 6:00pm (Vietnam Time)</div>{" "}
           {/* countdownIntro */}
           <div className="countdownWrapper">
             <div className="countdownSection">
@@ -85,8 +85,8 @@ const Portfolio = ({ className, frontmatter }) => {
       <PageSection className={clsx("portfolio-section", className)} id={anchor}>
         <Notifications options={{ zIndex: 200, top: "50px" }} />
         {/* <Row className="justify-content-center ceremony-header"> */}
-          <SectionHeader header={header} subheader={subheader} />
-          {/* <CopyToClipboard text="#CaitlinAndJustin2020">
+        <SectionHeader header={header} subheader={subheader} />
+        {/* <CopyToClipboard text="#CaitlinAndJustin2020">
             <button
               onClick={copiedToClipboard}
               id="copy-to-clipboard"
@@ -101,17 +101,17 @@ const Portfolio = ({ className, frontmatter }) => {
         {/* </Row> */}
         <div className="countdownAndVideoDiv">
           {/* <Row> */}
-            <Countdown date="2023-03-04T06:00:00-05:00" renderer={renderer} />
+          <Countdown date="2023-03-04T06:00:00-05:00" renderer={renderer} />
           {/* </Row> */}
           {/* <Row> */}
-            <a
-              href="https://www.youtube.com/watch?v=EXOL-3JyXMI&feature=emb_err_woyt"
-              target="_blank"
-              rel="noreferrer"
-              className="youtubeLink"
-            >
-              <div className="container">
-                {/* <img src={Youtube} alt="youtubeLink" className="image" width="560" height="auto" />
+          <a
+            href="https://www.youtube.com/watch?v=EXOL-3JyXMI&feature=emb_err_woyt"
+            target="_blank"
+            rel="noreferrer"
+            className="youtubeLink"
+          >
+            <div className="container">
+              {/* <img src={Youtube} alt="youtubeLink" className="image" width="560" height="auto" />
                 <div className="middle">
                   <img
                     src={YoutubeHover}
@@ -121,10 +121,10 @@ const Portfolio = ({ className, frontmatter }) => {
                     height="auto"
                   />
                 </div>{" "} */}
-                {/* middle */}
-              </div>{" "}
-              {/* container */}
-            </a>
+              {/* middle */}
+            </div>{" "}
+            {/* container */}
+          </a>
           {/* </Row> */}
         </div>{" "}
         {/* countdownAndVideoDiv */}

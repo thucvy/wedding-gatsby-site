@@ -83,7 +83,7 @@ const Contact = ({ className, frontmatter }) => {
                 <Form.Label>Họ Tên/ Danh xưng</Form.Label>
                 <Form.Control
                   type="text"
-                  placeholder="Anh A Tèo"
+                  placeholder="A Tèo"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                 />
