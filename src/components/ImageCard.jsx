@@ -13,6 +13,7 @@ const ImageCard = () => {
       <Carousel.Item>
         <img className="d-block w-100" src={carouselImage1} alt="First slide" />
         <Carousel.Caption>
+          <p>Want to know how we end up here? ❣️</p>
           <h3>
             <Button
               size="xl"
@@ -23,7 +24,6 @@ const ImageCard = () => {
               Our story
             </Button>
           </h3>
-          <p>Want to know how we end up here? ❣️</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -47,6 +47,7 @@ const ImageCard = () => {
         <img className="d-block w-100" src={carouselImage3} alt="Third slide" />
 
         <Carousel.Caption>
+          <p>Feel free to give us some extra love 💌</p>
           <h3>
             <Button
               size="xl"
@@ -57,7 +58,6 @@ const ImageCard = () => {
               Send Message
             </Button>
           </h3>
-          <p>Feel free to give us some extra love 💌</p>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
