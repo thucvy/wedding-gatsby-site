@@ -1,5 +1,5 @@
 ---
-anchor: "Guest Book"
+anchor: "GuestBook"
 header: "Guest Book"
 subheader: "Sign our virtual guest book!"
 telephone: +84 984990795
