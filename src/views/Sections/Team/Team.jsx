@@ -30,23 +30,21 @@ const Team = ({ className, frontmatter }) => {
     <div>
       <PageSection className={className} id={anchor}>
         <Notifications options={{ zIndex: 200, top: "50px" }} />
-        <Row>
-          <SectionHeader header={rootHeader} subheader={rootSubHeader} />
-        </Row>
-        <Row className="charities">
-          <Col lg={8} className="mx-auto text-center">
-            <p className="large text-muted">
-              We Thank You
-            </p>
+        {/* <Row> */}
+        <SectionHeader header={rootHeader} subheader={rootSubHeader} />
+        {/* </Row> */}
+        {/* <Row className="charities"> */}
+        <Col lg={8} className="mx-auto text-center">
+          <p className="large text-muted">We Thank You</p>
+        </Col>
+        {/* </Row> */}
+        {/* <Row> */}
+        {teamMember.map(({ header, ...tmProps }) => (
+          <Col sm={4} className="mx-auto text-center" key={header}>
+            <TeamMember header={header} {...tmProps} />
           </Col>
-        </Row>
-        <Row>
-          {teamMember.map(({ header, ...tmProps }) => (
-            <Col sm={4} key={header}>
-              <TeamMember header={header} {...tmProps} />
-            </Col>
-          ))}
-        </Row>
+        ))}
+        {/* </Row> */}
       </PageSection>
     </div>
   );

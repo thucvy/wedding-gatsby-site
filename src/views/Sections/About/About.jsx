@@ -18,10 +18,10 @@ const About = ({ className, frontmatter }) => {
 
   return (
     <PageSection className={className} id={anchor}>
-      <Row>
+      {/* <Row> */}
         <SectionHeader header={rootHeader} subheader={rootSubHeader} />
-      </Row>
-      <Row>
+      {/* </Row> */}
+      {/* <Row> */}
         <Col lg={12}>
           <ul className="timeline">
             {timeline.map(({ content, header, imageContent, imageFileName, subheader }, ind) => (
@@ -41,7 +41,7 @@ const About = ({ className, frontmatter }) => {
             ))}
           </ul>
         </Col>
-      </Row>
+      {/* </Row> */}
     </PageSection>
   );
 };

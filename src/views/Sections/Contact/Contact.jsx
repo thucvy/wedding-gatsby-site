@@ -5,8 +5,6 @@ import { Row, Col, Form, Button, Accordion, Alert } from "react-bootstrap";
 import SectionHeader from "components/SectionHeader";
 import PageSection from "components/PageSection";
 
-import axios from "axios";
-
 const Contact = ({ className, frontmatter }) => {
   const [id, setId] = useState(0);
   const [name, setName] = useState("");
@@ -74,11 +72,11 @@ const Contact = ({ className, frontmatter }) => {
   return (
     <div>
       <PageSection className={className} id={anchor}>
-        <Row>
+        {/* <Row> */}
           <SectionHeader header={rootHeader} subheader={rootSubHeader} />
-        </Row>
-        <Row className="charities">
-          <Col lg={8} className="mx-auto text-center">
+        {/* </Row> */}
+        {/* <Row className="charities"> */}
+          <Col className="mx-auto text-center">
             {alert && <Alert variant="danger">Xin điền đầy đủ thông tin trước khi gửi đi ạ</Alert>}
             <Form className="mb-3">
               <Form.Group className="mb-3" controlId="ControlInput1">
@@ -116,7 +114,7 @@ const Contact = ({ className, frontmatter }) => {
             {sent && <Alert variant="success">Lời nhắn đã được gửi đi thành công. Xin cảm ơn!</Alert>}
             {errorMsg && <Alert variant="danger">{errorMsg}</Alert>}
           </Col>
-        </Row>
+        {/* </Row> */}
         {/* {guestBook.length > 0 && (
           <Row className="charities mt-5">
             <Accordion>

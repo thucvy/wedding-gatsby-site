@@ -15,10 +15,10 @@ const Services = ({ className, frontmatter }) => {
 
   return (
     <PageSection className={className} id={anchor}>
-      <Row>
+      {/* <Row> */}
         <SectionHeader header={rootHeader} subheader={rootSubHeader} />
-      </Row>
-      <Row>
+      {/* </Row> */}
+      {/* <Row> */}
         <div className="message">
           <p className="paragraph1">
             Thank you for taking out some of your precious time and be here to celebrate the story
@@ -30,7 +30,7 @@ const Services = ({ className, frontmatter }) => {
           </p>
         </div>{" "}
         {/* message */}
-      </Row>
+      {/* </Row> */}
     </PageSection>
   );
 };

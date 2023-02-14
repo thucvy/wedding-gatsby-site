@@ -84,7 +84,7 @@ const Portfolio = ({ className, frontmatter }) => {
     <div className="outerWrapper">
       <PageSection className={clsx("portfolio-section", className)} id={anchor}>
         <Notifications options={{ zIndex: 200, top: "50px" }} />
-        <Row className="justify-content-center ceremony-header">
+        {/* <Row className="justify-content-center ceremony-header"> */}
           <SectionHeader header={header} subheader={subheader} />
           {/* <CopyToClipboard text="#CaitlinAndJustin2020">
             <button
@@ -98,12 +98,12 @@ const Portfolio = ({ className, frontmatter }) => {
               #CaitlinAndJustin2020
             </button>
           </CopyToClipboard> */}
-        </Row>
+        {/* </Row> */}
         <div className="countdownAndVideoDiv">
-          <Row>
+          {/* <Row> */}
             <Countdown date="2023-03-04T06:00:00-05:00" renderer={renderer} />
-          </Row>
-          <Row>
+          {/* </Row> */}
+          {/* <Row> */}
             <a
               href="https://www.youtube.com/watch?v=EXOL-3JyXMI&feature=emb_err_woyt"
               target="_blank"
@@ -125,7 +125,7 @@ const Portfolio = ({ className, frontmatter }) => {
               </div>{" "}
               {/* container */}
             </a>
-          </Row>
+          {/* </Row> */}
         </div>{" "}
         {/* countdownAndVideoDiv */}
       </PageSection>
