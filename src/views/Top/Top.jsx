@@ -23,11 +23,7 @@ const Top = ({ frontmatter }) => {
     );
   }
 
-  return (
-    <ImageCard
-      extraInfo={extraInfoPart}
-    />
-  );
+  return <ImageCard extraInfo={extraInfoPart} id="Carousel" />;
 };
 
 Top.propTypes = {
