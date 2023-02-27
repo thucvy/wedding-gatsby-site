@@ -73,32 +73,32 @@ const Contact = ({ className, frontmatter }) => {
     <div>
       <PageSection className={className} id={anchor}>
         {/* <Row> */}
-          <SectionHeader header={rootHeader} subheader={rootSubHeader} />
+        <SectionHeader header={rootHeader} subheader={rootSubHeader} />
         {/* </Row> */}
         {/* <Row className="charities"> */}
-          <Col className="mx-auto text-center">
-            {alert && <Alert variant="danger">Xin điền đầy đủ thông tin trước khi gửi đi ạ</Alert>}
-            <Form className="mb-3">
-              <Form.Group className="mb-3" controlId="ControlInput1">
-                <Form.Label>Họ Tên/ Danh xưng</Form.Label>
-                <Form.Control
-                  type="text"
-                  placeholder="A Tèo"
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
-                />
-              </Form.Group>
-              <Form.Group className="mb-3" controlId="ControlTextarea1">
-                <Form.Label>Lời nhắn đến Huân và Vy 💌</Form.Label>
-                <Form.Control
-                  as="textarea"
-                  rows={10}
-                  placeholder="Chúc mừng 2 bé iu"
-                  value={message}
-                  onChange={(e) => setMessage(e.target.value)}
-                />
-              </Form.Group>
-              {/* <Form.Group className="mb-3" controlId="ControlFile">
+        <Col className="mx-auto text-center">
+          {alert && <Alert variant="danger">Xin điền đầy đủ thông tin trước khi gửi đi ạ</Alert>}
+          <Form className="mb-3">
+            <Form.Group className="mb-3" controlId="ControlInput1">
+              <Form.Label>Họ Tên/ Danh xưng</Form.Label>
+              <Form.Control
+                type="text"
+                placeholder="Ví dụ: A Tèo"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+              />
+            </Form.Group>
+            <Form.Group className="mb-3" controlId="ControlTextarea1">
+              <Form.Label>Lời nhắn đến Huân và Vy 💌</Form.Label>
+              <Form.Control
+                as="textarea"
+                rows={10}
+                placeholder="Ví dụ: Chúc mừng 2 bé iu"
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
+              />
+            </Form.Group>
+            {/* <Form.Group className="mb-3" controlId="ControlFile">
                 <Form.Label>Đính kèm Hình/ Video (nếu có)</Form.Label>
                 <Form.Control
                   type="file"
@@ -107,13 +107,15 @@ const Contact = ({ className, frontmatter }) => {
                   }}
                 />
               </Form.Group> */}
-              <Button variant="primary" onClick={updateGuestBook}>
-                Gửi đi
-              </Button>
-            </Form>
-            {sent && <Alert variant="success">Lời nhắn đã được gửi đi thành công. Xin cảm ơn!</Alert>}
-            {errorMsg && <Alert variant="danger">{errorMsg}</Alert>}
-          </Col>
+            <Button variant="primary" onClick={updateGuestBook}>
+              Gửi đi
+            </Button>
+          </Form>
+          {sent && (
+            <Alert variant="success">Lời nhắn đã được gửi đi thành công. Huân và Vy cảm ơn thật nhìuuu!</Alert>
+          )}
+          {errorMsg && <Alert variant="danger">{errorMsg}</Alert>}
+        </Col>
         {/* </Row> */}
         {/* {guestBook.length > 0 && (
           <Row className="charities mt-5">
